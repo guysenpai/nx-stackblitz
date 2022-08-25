@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/frontend/demo/shared/data-access/src",
+  "prefix": "demo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/frontend/demo/shared/data-access"],
+      "options": {
+        "jestConfig": "libs/frontend/demo/shared/data-access/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/frontend/demo/shared/data-access/**/*.ts",
+          "libs/frontend/demo/shared/data-access/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["platform:frontend", "scope:shared", "type:data-access"]
+}
