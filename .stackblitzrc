@@ -1,0 +1,5 @@
+{
+  "installDependencies": true,
+  "startCommand": "pnpm exec nx serve demo",
+  "compileTrigger": "save"
+}

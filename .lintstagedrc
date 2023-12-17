@@ -1,0 +1,7 @@
+{
+  "{apps,libs,tools}/**/*.{ts,js}": [
+    "pnpm exec nx affected -t lint --fix --uncommitted --files"
+  ],
+  "{apps,libs,tools}/**/*": ["pnpm exec nx format:write --files"],
+  "{apps,libs,tools}/**/*.scss": ["pnpm exec stylelint --fix"]
+}
